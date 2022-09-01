@@ -1,0 +1,151 @@
+      2    231
+
+spe.18608                       ATG ACC AAT CAT TTG GAG TCC TTA AAA AGA GAG CTT GCT GAG GCC AAA AAT GAG GCG TGG AGC GCG CAA TCA GCC CTG GCG AAT ATT CGG GGT TCT TTG CGG GGC CTT TTG GAG AGA CAT CGC ATG TTC AGT GAA CTG GAC TAC ACG AGT GCA AGT GTA GGT GGC GTG GAC AGT CGG GAG TTG GAG AAG CTT CTT TCA GAA AGG ATA GAC GAA CCG CTG ATG CAG AGC AAG 
+spe.38625                       ATG ACC AAT CAC TTG GAG TCT TTA AAA AGA GAG CTT TCT GAG GCC AAA AAT GAG GCG TGG AGC GCG CAA TCA GCC CTG GCG AAT ATT CGG GGT TCT TTG CGG GGC CTT TTG GAG AGA CAT CGC ATG TTC AGT GAA CTG GAC TAC ACG AGT GCA AGT GTA GGT GGC GTG GAC AGT CGG GAG TTG GAG AAG CTT CTT TCA GAA AGG ATA GAC GAA CCG CTG ATG CAG AGC AAG 
+
+
+
+Printing out site pattern counts
+
+
+         2        120  P
+
+spe.18608                       AAA AAG AAT ACC ACG AGA AGC AGG AGT ATA ATG ATT CAA CAG CAT CAT CCG CGC CGG CTG CTT GAA GAC GAG GCA GCC GCG GCT GGC GGT GTA GTG TAC TCA TCC TCT TGG TTA TTC TTG 
+spe.38625                       ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..C ... ... ... ... ... ... ... ... ... ... ... ... T.. ... ... ... ... ... ... ..T ... ... ... ... ... 
+
+    2    2    3    1    1    2    2    1    4    1    3    1    1    1    1
+    1    1    1    3    3    4    3    3    7    1    2    3    1    2    2
+    1    1    1    2    1    1    1    1    1    4
+
+CODONML (in paml version 4.8a, July 2014)  algn
+Model: One dN/dS ratio for branches, 
+Codon frequency model: F3x4
+ns =   2  ls =  77
+
+Codon usage in sequences
+----------------------------------------------------------------------
+Phe TTT   0   0 | Ser TCT   1   3 | Tyr TAT   0   0 | Cys TGT   0   0
+    TTC   1   1 |     TCC   1   0 |     TAC   1   1 |     TGC   0   0
+Leu TTA   1   1 |     TCA   2   2 | *** TAA   0   0 | *** TGA   0   0
+    TTG   4   4 |     TCG   0   0 |     TAG   0   0 | Trp TGG   1   1
+----------------------------------------------------------------------
+Leu CTT   4   4 | Pro CCT   0   0 | His CAT   2   1 | Arg CGT   0   0
+    CTC   0   0 |     CCC   0   0 |     CAC   0   1 |     CGC   1   1
+    CTA   0   0 |     CCA   0   0 | Gln CAA   1   1 |     CGA   0   0
+    CTG   3   3 |     CCG   1   1 |     CAG   1   1 |     CGG   3   3
+----------------------------------------------------------------------
+Ile ATT   1   1 | Thr ACT   0   0 | Asn AAT   3   3 | Ser AGT   4   4
+    ATC   0   0 |     ACC   1   1 |     AAC   0   0 |     AGC   2   2
+    ATA   1   1 |     ACA   0   0 | Lys AAA   2   2 | Arg AGA   2   2
+Met ATG   3   3 |     ACG   1   1 |     AAG   2   2 |     AGG   1   1
+----------------------------------------------------------------------
+Val GTT   0   0 | Ala GCT   1   0 | Asp GAT   0   0 | Gly GGT   2   2
+    GTC   0   0 |     GCC   2   2 |     GAC   3   3 |     GGC   2   2
+    GTA   1   1 |     GCA   1   1 | Glu GAA   3   3 |     GGA   0   0
+    GTG   1   1 |     GCG   3   3 |     GAG   7   7 |     GGG   0   0
+----------------------------------------------------------------------
+
+Codon position x base (3x4) table for each sequence.
+
+#1: spe.18608      
+position  1:    T:0.15584    C:0.20779    A:0.29870    G:0.33766
+position  2:    T:0.25974    C:0.18182    A:0.32468    G:0.23377
+position  3:    T:0.23377    C:0.18182    A:0.18182    G:0.40260
+Average         T:0.21645    C:0.19048    A:0.26840    G:0.32468
+
+#2: spe.38625      
+position  1:    T:0.16883    C:0.20779    A:0.29870    G:0.32468
+position  2:    T:0.25974    C:0.18182    A:0.32468    G:0.23377
+position  3:    T:0.23377    C:0.18182    A:0.18182    G:0.40260
+Average         T:0.22078    C:0.19048    A:0.26840    G:0.32035
+
+Sums of codon usage counts
+------------------------------------------------------------------------------
+Phe F TTT       0 | Ser S TCT       4 | Tyr Y TAT       0 | Cys C TGT       0
+      TTC       2 |       TCC       1 |       TAC       2 |       TGC       0
+Leu L TTA       2 |       TCA       4 | *** * TAA       0 | *** * TGA       0
+      TTG       8 |       TCG       0 |       TAG       0 | Trp W TGG       2
+------------------------------------------------------------------------------
+Leu L CTT       8 | Pro P CCT       0 | His H CAT       3 | Arg R CGT       0
+      CTC       0 |       CCC       0 |       CAC       1 |       CGC       2
+      CTA       0 |       CCA       0 | Gln Q CAA       2 |       CGA       0
+      CTG       6 |       CCG       2 |       CAG       2 |       CGG       6
+------------------------------------------------------------------------------
+Ile I ATT       2 | Thr T ACT       0 | Asn N AAT       6 | Ser S AGT       8
+      ATC       0 |       ACC       2 |       AAC       0 |       AGC       4
+      ATA       2 |       ACA       0 | Lys K AAA       4 | Arg R AGA       4
+Met M ATG       6 |       ACG       2 |       AAG       4 |       AGG       2
+------------------------------------------------------------------------------
+Val V GTT       0 | Ala A GCT       1 | Asp D GAT       0 | Gly G GGT       4
+      GTC       0 |       GCC       4 |       GAC       6 |       GGC       4
+      GTA       2 |       GCA       2 | Glu E GAA       6 |       GGA       0
+      GTG       2 |       GCG       6 |       GAG      14 |       GGG       0
+------------------------------------------------------------------------------
+
+
+Codon position x base (3x4) table, overall
+
+position  1:    T:0.16234    C:0.20779    A:0.29870    G:0.33117
+position  2:    T:0.25974    C:0.18182    A:0.32468    G:0.23377
+position  3:    T:0.23377    C:0.18182    A:0.18182    G:0.40260
+Average         T:0.21861    C:0.19048    A:0.26840    G:0.32251
+
+Codon frequencies under model, for use in evolver (TTT TTC TTA TTG ... GGG):
+  0.01024309  0.00796685  0.00796685  0.01764088
+  0.00717016  0.00557679  0.00557679  0.01234862
+  0.01280386  0.00995856  0.00000000  0.00000000
+  0.00921878  0.00717016  0.00000000  0.01587679
+  0.01311116  0.01019757  0.01019757  0.02258033
+  0.00917781  0.00713830  0.00713830  0.01580623
+  0.01638895  0.01274696  0.01274696  0.02822541
+  0.01180004  0.00917781  0.00917781  0.02032229
+  0.01884729  0.01465900  0.01465900  0.03245922
+  0.01319310  0.01026130  0.01026130  0.02272145
+  0.02355911  0.01832375  0.01832375  0.04057402
+  0.01696256  0.01319310  0.01319310  0.02921330
+  0.02089591  0.01625237  0.01625237  0.03598739
+  0.01462713  0.01137666  0.01137666  0.02519118
+  0.02611988  0.02031546  0.02031546  0.04498424
+  0.01880632  0.01462713  0.01462713  0.03238865
+
+
+
+Nei & Gojobori 1986. dN/dS (dN, dS)
+(Note: This matrix is not used in later ML. analysis.
+Use runmode = -2 for ML pairwise comparison.)
+
+spe.18608           
+spe.38625            0.1448 (0.0056 0.0389)
+
+
+TREE #  1:  (1, 2);   MP score: 3
+lnL(ntime:  2  np:  4):   -327.409544      +0.000000
+   3..1     3..2  
+ 0.014303 0.025378 2.355784 0.154821
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per neucleotide site).
+
+tree length =   0.03968
+
+(1: 0.014303, 2: 0.025378);
+
+(spe.18608: 0.014303, spe.38625: 0.025378);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.35578
+
+omega (dN/dS) =  0.15482
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+   3..1      0.014   175.9    55.1  0.1548  0.0021  0.0134   0.4   0.7
+   3..2      0.025   175.9    55.1  0.1548  0.0037  0.0237   0.6   1.3
+
+tree length for dN:       0.0057
+tree length for dS:       0.0371
+
+
+Time used:  0:00
