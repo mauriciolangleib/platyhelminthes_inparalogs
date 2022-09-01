@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#mkdir resultado_parseo_clusters_positivos
+
+for proteinas in $(\ls -d signalP*); do
+#	grep -v "#" $cluster | awk -F '\t' '{if($10 == 'Y') {print $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12}}' > ./resultado_parseo_clusters_positivos/$cluster 
+	for linea in $proteinas; do 
+	grep -v "#" $linea | awk ' $10 == "Y" {print $1} ' $linea >> lista_proteinas_signalpeptide_positivo_${proteinas}
+
+done
+done

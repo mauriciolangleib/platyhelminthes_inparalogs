@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in $(ls analisis_targetp_SECRETOMA_TENTATIVO_truncado.fsa.0*); do
+	grep -v "#" $i | awk -F ' ' '$3 < 0.95 {print $1}' | grep -v "-" | grep -v "cutoff" > proteinas_no_mitocondriales_${i}.lis
+	grep -v "#" $i | awk -F ' ' '$3 >= 0.95 {print $1}' | grep -v "-" | grep -v "cutoff" | grep -v "Number" | grep -v "Using" | grep -v "Name" | grep -v "Cleavage" > proteinas_mitocondriales_${i}.lis
+done

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#echo 'Especificar ruta a signalP'
+#read directorio
+
+for i in $( ls SECRETOMA_TENTATIVO_truncado.fsa.0* ); do
+    nohup /home/mauricio/programas_lab/targetp-1.1/targetp -N $i > analisis_targetp_${i}s
+done
